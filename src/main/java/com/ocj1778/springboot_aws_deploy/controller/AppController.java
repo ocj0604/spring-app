@@ -62,4 +62,8 @@ public class AppController {
         return ResponseEntity.ok().body(board);
     }
 
+    @GetMapping("/hello")
+    public String hello() {
+        return "hello";
+    }
 }
